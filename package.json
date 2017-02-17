@@ -1,0 +1,34 @@
+{
+  "name": "sum-csv",
+  "version": "0.0.1",
+  "description": "Utility that helps you to sum rows in CSV files",
+  "keywords": [
+    "csv"
+  ],
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "author": "Andrés Maneiro <andres.maneiro@gmail.com>",
+  "url": "https://github.com/nosolosow/sum-csv",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nosolosow/sum-csv.git"
+  },
+  "bin": {
+    "sum-csv": "./index.js"
+  },
+  "scripts": {
+    "test": "`npm bin`/tape test.js | `npm bin`/faucet"
+  },
+  "dependencies": {
+    "d3-array": "^1.0.2",
+    "d3-dsv": "^1.0.3",
+    "rw": "^1.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-wpcalypso": "^0.6.0",
+    "eslint-plugin-wpcalypso": "^3.0.1",
+    "faucet": "0.0.1",
+    "tape": "^4.6.3"
+  }
+}
