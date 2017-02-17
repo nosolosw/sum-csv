@@ -7,11 +7,11 @@ const test = require( 'tape' );
 /**
  * Internal dependencies
  */
-const reducer = require( './reducer' );
+const counter = require( './counter' );
 
-test( 'reducer works', t => {
-	reducer( rw.readFileSync( __dirname + '/demo.csv', 'utf8' ), [ 'date' ], ( output ) => {
-		t.equals( output, 'text/plain,56\ntext/html,48\ntext/rtf,11' );
+test( 'counter works', t => {
+	counter( rw.readFileSync( __dirname + '/demo.csv', 'utf8' ), [ 'date' ], ( output ) => {
+		t.equals( output, '56,text/plain\n48,text/html\n11,text/rtf' );
 		t.end();
 	} );
 } );

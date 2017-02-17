@@ -1,7 +1,7 @@
 {
   "name": "sum-csv",
   "version": "0.0.1",
-  "description": "Utility that helps you to sum rows in CSV files",
+  "description": "Utility that helps you to sum CSV file columns",
   "keywords": [
     "csv"
   ],
@@ -20,6 +20,7 @@
     "test": "`npm bin`/tape test.js | `npm bin`/faucet"
   },
   "dependencies": {
+    "commander": "^2.9.0",
     "d3-array": "^1.0.2",
     "d3-dsv": "^1.0.3",
     "rw": "^1.3.3"
