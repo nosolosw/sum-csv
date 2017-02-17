@@ -10,8 +10,8 @@ const test = require( 'tape' );
 const counter = require( './counter' );
 
 test( 'counter works', t => {
-	counter( rw.readFileSync( __dirname + '/demo.csv', 'utf8' ), [ 'date' ], ( output ) => {
-		t.equals( output, '56,text/plain\n48,text/html\n11,text/rtf' );
+	counter( rw.readFileSync( __dirname + '/demo.csv', 'utf8' ), [ 'col1' ], ( output ) => {
+		t.equals( output, '56, col2\n48, col4\n11, col3' );
 		t.end();
 	} );
 } );
